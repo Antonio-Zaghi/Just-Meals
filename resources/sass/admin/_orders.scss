@@ -1,0 +1,114 @@
+@import "../variables.scss";
+
+.admin-orders-index{
+    padding: 50px 0;
+    h1{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .row{
+        align-content: stretch;
+        .colle{
+            height: 100%;
+            .order-card{
+                height: 100%;
+                background-color: $my-white;
+                border-radius: 25px;
+                padding: 15px;
+                .tag{
+                    color: $my-white;
+                    width: auto;
+                    display: inline-block;
+                    border-radius: 10px;
+                    text-align: center;
+                    padding: 4px;
+                }
+                .confirmed-tag{
+                    background-color: $my-blue;
+                }
+                .toconfirm-tag{
+                    background-color: $my-orange;
+                }
+                .order-id{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 1.35em;
+                    text-align: center;
+                    display: block;
+                    color: $my-blue;
+                    margin-top: 15px;
+
+                }
+                .btns{
+                    padding: 15px 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+                    .edit-btn{
+                        text-decoration: none;
+                        display: block;
+                        height: 100%;
+                    }
+                    .edit{
+                        border: 2px solid $my-black;
+                        &:hover{
+                            border: 2px solid $my-light-blue;
+                        }
+                    }
+                    button{
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bold{
+        font-weight: 700;
+    }
+}
+
+
+
+.admin-orders-edit{
+
+    .riepilogo{
+        padding: 40px 0;      
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .item{
+            width: calc((100% / 3) - (50px * 2 / 3 ));
+            border: 1px solid white;
+            background-color: $my-white;
+            border-radius: 25px;
+            padding: 20px 10px;
+            .item-span{
+                color: $my-blue;
+                font-weight: 600;
+                font-size: 1.3em;
+            }
+        }
+    }
+    .tot_price{
+        padding: 20px 0 20px 0;
+    }
+    .btns{
+        display: flex;
+        gap: 15px;
+        form{
+            margin-top: 50px;
+            #delivery{
+                width: auto;
+            }
+    
+        }
+    }
+
+
+
+}
+
